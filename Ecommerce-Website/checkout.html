@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>ShopEase</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="products-section">
+
+    <h2>Checkout</h2>
+
+    <form class="checkout-form">
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="text" placeholder="Address" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+<button type="button" onclick="placeOrder()">Place Order</button>
+    </form>
+
+</section>
+<script>
+function placeOrder() {
+    alert("Order Placed Successfully!\nThank you for shopping with ShopEase.");
+}
+</script>
+<footer>
+    <p>© 2026 ShopEase | Developed by Sandhya Lokare</p>
+</footer>
+</body>
+</html>

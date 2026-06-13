@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>ShopEase</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="products-section">
+    <h2>Our Products</h2>
+    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+
+    <div class="product-container">
+
+        <div class="product-card">
+           <img src="images/smartphone.jpg" alt="Smartphone">
+            <h3>Smartphone</h3>
+            <p>₹25,000</p>
+            <button onclick="addToCart('Smartphone',25000)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/laptop.jpg" alt="Laptop">
+            <h3>Laptop</h3>
+            <p>₹55,000</p>
+            <button onclick="addToCart('Laptop',55000)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/headphones.jpg" alt="Headphones">
+            <h3>Headphones</h3>
+            <p>₹2,500</p>
+            <button onclick="addToCart('Headphones',2500)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<script src="products.js"></script>
+<footer>
+    <p>© 2026 ShopEase | Developed by Sandhya Lokare</p>
+</footer>
+</body>
+</html>
